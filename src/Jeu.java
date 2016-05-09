@@ -32,16 +32,9 @@ public class Jeu extends javax.swing.JFrame {
         SelectionJeu = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jButton2 = new javax.swing.JButton();
-        Jeu1Joueur = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jTextField3 = new javax.swing.JTextField();
+        jRadio1J = new javax.swing.JRadioButton();
+        jRadio2J = new javax.swing.JRadioButton();
+        ButtonSelecNbJ = new javax.swing.JButton();
         Jeu2Joueurs = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -49,8 +42,8 @@ public class Jeu extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        jButtonContinuer = new javax.swing.JButton();
+        jButtonRetour = new javax.swing.JButton();
         Map = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
@@ -93,12 +86,24 @@ public class Jeu extends javax.swing.JFrame {
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
+        Jeu1Joueur = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jButtonContinuer1J = new javax.swing.JButton();
+        jButtonRetour1J = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo_finstere.gif"))); // NOI18N
 
         jButton1.setText("Commencer");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout DebutLayout = new javax.swing.GroupLayout(Debut);
         Debut.setLayout(DebutLayout);
@@ -112,7 +117,7 @@ public class Jeu extends javax.swing.JFrame {
                     .addGroup(DebutLayout.createSequentialGroup()
                         .addGap(149, 149, 149)
                         .addComponent(jButton1)))
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addContainerGap(1136, Short.MAX_VALUE))
         );
         DebutLayout.setVerticalGroup(
             DebutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,16 +126,31 @@ public class Jeu extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(45, 45, 45)
                 .addComponent(jButton1)
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addContainerGap(385, Short.MAX_VALUE))
         );
 
         jLabel2.setText("Selection du type de jeu");
 
-        jRadioButton1.setText("Un joueur");
+        jRadio1J.setText("Un joueur");
+        jRadio1J.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadio1JActionPerformed(evt);
+            }
+        });
 
-        jRadioButton2.setText("Deux joueurs");
+        jRadio2J.setText("Deux joueurs");
+        jRadio2J.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadio2JActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Sélection");
+        ButtonSelecNbJ.setText("Sélection");
+        ButtonSelecNbJ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonSelecNbJActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -141,14 +161,14 @@ public class Jeu extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(137, 137, 137)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton1)))
+                            .addComponent(jRadio2J)
+                            .addComponent(jRadio1J)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(124, 124, 124)
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(145, 145, 145)
-                        .addComponent(jButton2)))
+                        .addComponent(ButtonSelecNbJ)))
                 .addContainerGap(154, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -157,11 +177,11 @@ public class Jeu extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addComponent(jLabel2)
                 .addGap(40, 40, 40)
-                .addComponent(jRadioButton1)
+                .addComponent(jRadio1J)
                 .addGap(18, 18, 18)
-                .addComponent(jRadioButton2)
+                .addComponent(jRadio2J)
                 .addGap(26, 26, 26)
-                .addComponent(jButton2)
+                .addComponent(ButtonSelecNbJ)
                 .addContainerGap(82, Short.MAX_VALUE))
         );
 
@@ -176,62 +196,6 @@ public class Jeu extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel3.setText("Paramètres");
-
-        jLabel4.setText("Nom joueur 1");
-
-        jLabel5.setText("Nom joueur 2");
-
-        jButton3.setText("Continuer");
-
-        jButton4.setText("Retour");
-
-        jTextField3.setText("NomJoueur");
-
-        javax.swing.GroupLayout Jeu1JoueurLayout = new javax.swing.GroupLayout(Jeu1Joueur);
-        Jeu1Joueur.setLayout(Jeu1JoueurLayout);
-        Jeu1JoueurLayout.setHorizontalGroup(
-            Jeu1JoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Jeu1JoueurLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3)
-                .addGap(105, 105, 105))
-            .addGroup(Jeu1JoueurLayout.createSequentialGroup()
-                .addGap(93, 93, 93)
-                .addGroup(Jeu1JoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField3)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
-                .addComponent(jLabel5)
-                .addGap(97, 97, 97))
-            .addGroup(Jeu1JoueurLayout.createSequentialGroup()
-                .addGroup(Jeu1JoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Jeu1JoueurLayout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addComponent(jButton4))
-                    .addGroup(Jeu1JoueurLayout.createSequentialGroup()
-                        .addGap(188, 188, 188)
-                        .addComponent(jLabel3)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        Jeu1JoueurLayout.setVerticalGroup(
-            Jeu1JoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Jeu1JoueurLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addGroup(Jeu1JoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addGap(18, 18, 18)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                .addGroup(Jeu1JoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
-                .addGap(82, 82, 82))
-        );
-
         jLabel6.setText("Paramètres");
 
         jLabel7.setText("Nom joueur 1");
@@ -242,9 +206,9 @@ public class Jeu extends javax.swing.JFrame {
 
         jTextField2.setText("NomJ1");
 
-        jButton5.setText("Continuer");
+        jButtonContinuer.setText("Continuer");
 
-        jButton6.setText("Retour");
+        jButtonRetour.setText("Retour");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -260,10 +224,10 @@ public class Jeu extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField2))
-                    .addComponent(jButton6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                    .addComponent(jButtonRetour))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton5)
+                    .addComponent(jButtonContinuer)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField1)))
@@ -284,9 +248,9 @@ public class Jeu extends javax.swing.JFrame {
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(69, 69, 69)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6))
-                .addContainerGap(74, Short.MAX_VALUE))
+                    .addComponent(jButtonContinuer)
+                    .addComponent(jButtonRetour))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout Jeu2JoueursLayout = new javax.swing.GroupLayout(Jeu2Joueurs);
@@ -557,6 +521,60 @@ public class Jeu extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
+        jLabel3.setText("Paramètre");
+
+        jButtonContinuer1J.setText("Continuer");
+
+        jButtonRetour1J.setText("Retour");
+
+        jLabel4.setText("Nom Joueur :");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(58, Short.MAX_VALUE)
+                .addComponent(jButtonRetour1J)
+                .addGap(54, 54, 54)
+                .addComponent(jButtonContinuer1J)
+                .addGap(52, 52, 52))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(108, 108, 108)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel3)
+                        .addComponent(jLabel4)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(18, 18, 18)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonContinuer1J)
+                    .addComponent(jButtonRetour1J))
+                .addGap(68, 68, 68))
+        );
+
+        javax.swing.GroupLayout Jeu1JoueurLayout = new javax.swing.GroupLayout(Jeu1Joueur);
+        Jeu1Joueur.setLayout(Jeu1JoueurLayout);
+        Jeu1JoueurLayout.setHorizontalGroup(
+            Jeu1JoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Jeu1JoueurLayout.setVerticalGroup(
+            Jeu1JoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -570,17 +588,17 @@ public class Jeu extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Jeu1Joueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(Jeu2Joueurs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(Map, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Jeu1Joueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
@@ -594,11 +612,6 @@ public class Jeu extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Jeu1Joueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(Jeu2Joueurs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -606,10 +619,64 @@ public class Jeu extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(Map, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Jeu1Joueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        this.Debut.setVisible(true);
+        this.SelectionJeu.setVisible(false);
+        
+        this.Debut.setVisible(false);
+        this.SelectionJeu.setVisible(true);
+        this.Jeu1Joueur.setVisible(false);
+        this.Jeu2Joueurs.setVisible(false);
+        this.Map.setVisible(false);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void ButtonSelecNbJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSelecNbJActionPerformed
+        // TODO add your handling code here:
+        
+        this.Debut.setVisible(false);
+        this.SelectionJeu.setVisible(false);
+        if(jRadio1J.isSelected()){
+            this.Debut.setVisible(false);
+            this.Jeu1Joueur.setVisible(true);
+            this.Jeu2Joueurs.setVisible(false);
+            this.SelectionJeu.setVisible(false);
+            this.Map.setVisible(false);
+        }if(jRadio2J.isSelected()){
+            this.Debut.setVisible(false);
+            this.Jeu1Joueur.setVisible(false);
+            this.Jeu2Joueurs.setVisible(true);
+            this.SelectionJeu.setVisible(false);
+            this.Map.setVisible(false);
+        }else{
+            this.Debut.setVisible(false);
+            this.Jeu1Joueur.setVisible(false);
+            this.Jeu2Joueurs.setVisible(false);
+            this.Map.setVisible(false);
+        }
+        this.Map.setVisible(false);
+        
+    }//GEN-LAST:event_ButtonSelecNbJActionPerformed
+
+    private void jRadio1JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadio1JActionPerformed
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_jRadio1JActionPerformed
+
+    private void jRadio2JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadio2JActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadio2JActionPerformed
 
     /**
      * @param args the command line arguments
@@ -647,18 +714,18 @@ public class Jeu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ButtonSelecNbJ;
     private javax.swing.JPanel Debut;
     private javax.swing.JPanel Jeu1Joueur;
     private javax.swing.JPanel Jeu2Joueurs;
     private javax.swing.JPanel Map;
     private javax.swing.JPanel SelectionJeu;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButtonContinuer;
+    private javax.swing.JButton jButtonContinuer1J;
+    private javax.swing.JButton jButtonRetour;
+    private javax.swing.JButton jButtonRetour1J;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -698,7 +765,6 @@ public class Jeu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -706,8 +772,9 @@ public class Jeu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JRadioButton jRadio1J;
+    private javax.swing.JRadioButton jRadio2J;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
