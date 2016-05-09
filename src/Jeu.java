@@ -112,7 +112,7 @@ public class Jeu extends javax.swing.JFrame {
                     .addGroup(DebutLayout.createSequentialGroup()
                         .addGap(149, 149, 149)
                         .addComponent(jButton1)))
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addContainerGap(141, Short.MAX_VALUE))
         );
         DebutLayout.setVerticalGroup(
             DebutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,7 +121,7 @@ public class Jeu extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(45, 45, 45)
                 .addComponent(jButton1)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         jLabel2.setText("Selection du type de jeu");
