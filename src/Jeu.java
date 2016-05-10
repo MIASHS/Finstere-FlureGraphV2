@@ -49,43 +49,43 @@ public class Jeu extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        Pion1J1 = new javax.swing.JLabel();
+        Pion2J1 = new javax.swing.JLabel();
+        Pion3J1 = new javax.swing.JLabel();
+        Pion4J1 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        Pion1J2 = new javax.swing.JLabel();
+        Pion2J2 = new javax.swing.JLabel();
+        Pion3J2 = new javax.swing.JLabel();
+        Pion4J2 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jTextField4 = new javax.swing.JTextField();
-        jButton7 = new javax.swing.JButton();
+        BtChat = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
+        NbTourJ1 = new javax.swing.JLabel();
+        NbTourJ2 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
+        NbTour = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        EtatManche = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
+        PiocheMonstre = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
+        PionMort1J1 = new javax.swing.JLabel();
+        PionMort2J1 = new javax.swing.JLabel();
+        PionMort3J1 = new javax.swing.JLabel();
+        PionMort4J1 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
+        PionMort1J2 = new javax.swing.JLabel();
+        PionMort2J2 = new javax.swing.JLabel();
+        PionMort3J2 = new javax.swing.JLabel();
+        PionMort4J2 = new javax.swing.JLabel();
         Jeu1Joueur = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -291,25 +291,25 @@ public class Jeu extends javax.swing.JFrame {
 
         jLabel11.setText("Pions Joueur 1 :");
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pionblue_1_6_clair.gif"))); // NOI18N
+        Pion1J1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pionblue_1_6_clair.gif"))); // NOI18N
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pionblue_3_4_clair.gif"))); // NOI18N
+        Pion2J1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pionblue_3_4_clair.gif"))); // NOI18N
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pionblue_4_3_clair.gif"))); // NOI18N
+        Pion3J1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pionblue_4_3_clair.gif"))); // NOI18N
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pionblue_5_2_clair.gif"))); // NOI18N
+        Pion4J1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pionblue_5_2_clair.gif"))); // NOI18N
 
         jLabel16.setText("Nombre tour :");
 
         jLabel17.setText("Pions Joueur 2 : ");
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/piongreen_1_6_clair.gif"))); // NOI18N
+        Pion1J2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/piongreen_1_6_clair.gif"))); // NOI18N
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/piongreen_3_4_clair.gif"))); // NOI18N
+        Pion2J2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/piongreen_3_4_clair.gif"))); // NOI18N
 
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/piongreen_4_3_clair.gif"))); // NOI18N
+        Pion3J2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/piongreen_4_3_clair.gif"))); // NOI18N
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/piongreen_5_2_clair.gif"))); // NOI18N
+        Pion4J2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/piongreen_5_2_clair.gif"))); // NOI18N
 
         jLabel22.setText("Nombre tour :");
 
@@ -319,27 +319,27 @@ public class Jeu extends javax.swing.JFrame {
 
         jTextField4.setText("jTextField4");
 
-        jButton7.setText("Envoyer");
+        BtChat.setText("Envoyer");
 
         jLabel23.setText("Chat :");
 
-        jLabel24.setText("jLabel24");
+        NbTourJ1.setText("jLabel24");
 
-        jLabel25.setText("jLabel25");
+        NbTourJ2.setText("jLabel25");
 
         jLabel26.setText("Nombre de tour(s) :");
 
-        jLabel27.setText("jLabel27");
+        NbTour.setText("jLabel27");
 
         jLabel28.setText("Etat de la manche :");
 
-        jLabel29.setText("jLabel29");
+        EtatManche.setText("jLabel29");
 
         jLabel30.setText("Information monstre :");
 
         jLabel31.setText("Pioche :");
 
-        jLabel32.setText("jLabel32");
+        PiocheMonstre.setText("jLabel32");
 
         jLabel33.setText("jLabel33");
 
@@ -347,65 +347,65 @@ public class Jeu extends javax.swing.JFrame {
 
         jLabel35.setText("Liste des pions mort Joueur 1 : ");
 
-        jLabel36.setText("jLabel36");
+        PionMort1J1.setText("jLabel36");
 
-        jLabel37.setText("jLabel37");
+        PionMort2J1.setText("jLabel37");
 
-        jLabel38.setText("jLabel38");
+        PionMort3J1.setText("jLabel38");
 
-        jLabel39.setText("jLabel39");
+        PionMort4J1.setText("jLabel39");
 
         jLabel40.setText("Liste des pions mort Joueurs 2 :");
 
-        jLabel41.setText("jLabel41");
+        PionMort1J2.setText("jLabel41");
 
-        jLabel42.setText("jLabel42");
+        PionMort2J2.setText("jLabel42");
 
-        jLabel43.setText("jLabel43");
+        PionMort3J2.setText("jLabel43");
 
-        jLabel44.setText("jLabel44");
+        PionMort4J2.setText("jLabel44");
 
         javax.swing.GroupLayout MapLayout = new javax.swing.GroupLayout(Map);
         Map.setLayout(MapLayout);
         MapLayout.setHorizontalGroup(
             MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MapLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(0, 0, 0)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10)
                     .addGroup(MapLayout.createSequentialGroup()
                         .addComponent(jLabel26)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel27))
+                        .addComponent(NbTour))
                     .addGroup(MapLayout.createSequentialGroup()
                         .addComponent(jLabel28)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel29))
+                        .addComponent(EtatManche))
                     .addComponent(jLabel30)
                     .addGroup(MapLayout.createSequentialGroup()
                         .addComponent(jLabel31)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel32))
+                        .addComponent(PiocheMonstre))
                     .addGroup(MapLayout.createSequentialGroup()
                         .addComponent(jLabel33)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel34))
                     .addComponent(jLabel35)
                     .addGroup(MapLayout.createSequentialGroup()
-                        .addComponent(jLabel36)
+                        .addComponent(PionMort1J1)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel37)
+                        .addComponent(PionMort2J1)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel38))
-                    .addComponent(jLabel39)
+                        .addComponent(PionMort3J1))
+                    .addComponent(PionMort4J1)
                     .addComponent(jLabel40)
                     .addGroup(MapLayout.createSequentialGroup()
-                        .addComponent(jLabel41)
+                        .addComponent(PionMort1J2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel42)
+                        .addComponent(PionMort2J2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel43))
-                    .addComponent(jLabel44))
+                        .addComponent(PionMort3J2))
+                    .addComponent(PionMort4J2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -413,33 +413,33 @@ public class Jeu extends javax.swing.JFrame {
                     .addGroup(MapLayout.createSequentialGroup()
                         .addComponent(jLabel11)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel12)
+                        .addComponent(Pion1J1)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel13)
+                        .addComponent(Pion2J1)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel14)
+                        .addComponent(Pion3J1)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel15))
+                        .addComponent(Pion4J1))
                     .addGroup(MapLayout.createSequentialGroup()
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel24))
+                        .addComponent(NbTourJ1))
                     .addGroup(MapLayout.createSequentialGroup()
                         .addComponent(jLabel17)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel18)
+                        .addComponent(Pion1J2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel19)
+                        .addComponent(Pion2J2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel20)
+                        .addComponent(Pion3J2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel21))
+                        .addComponent(Pion4J2))
                     .addGroup(MapLayout.createSequentialGroup()
                         .addComponent(jLabel22)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel25))
+                        .addComponent(NbTourJ2))
                     .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jButton7)
+                        .addComponent(BtChat)
                         .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel23)
                             .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -457,25 +457,25 @@ public class Jeu extends javax.swing.JFrame {
                 .addGap(31, 31, 31)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel15))
+                    .addComponent(Pion1J1)
+                    .addComponent(Pion2J1)
+                    .addComponent(Pion3J1)
+                    .addComponent(Pion4J1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(jLabel24))
+                    .addComponent(NbTourJ1))
                 .addGap(18, 18, 18)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel19)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel21))
+                    .addComponent(Pion1J2)
+                    .addComponent(Pion2J2)
+                    .addComponent(Pion3J2)
+                    .addComponent(Pion4J2))
                 .addGap(18, 18, 18)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
-                    .addComponent(jLabel25))
+                    .addComponent(NbTourJ2))
                 .addGap(87, 87, 87)
                 .addComponent(jLabel23)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -483,24 +483,24 @@ public class Jeu extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addComponent(jButton7)
+                .addComponent(BtChat)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(MapLayout.createSequentialGroup()
                 .addComponent(jLabel10)
                 .addGap(34, 34, 34)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
-                    .addComponent(jLabel27))
+                    .addComponent(NbTour))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel28)
-                    .addComponent(jLabel29))
+                    .addComponent(EtatManche))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel30)
                 .addGap(18, 18, 18)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel31)
-                    .addComponent(jLabel32))
+                    .addComponent(PiocheMonstre))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
@@ -509,20 +509,20 @@ public class Jeu extends javax.swing.JFrame {
                 .addComponent(jLabel35)
                 .addGap(18, 18, 18)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel36)
-                    .addComponent(jLabel37)
-                    .addComponent(jLabel38))
+                    .addComponent(PionMort1J1)
+                    .addComponent(PionMort2J1)
+                    .addComponent(PionMort3J1))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel39)
+                .addComponent(PionMort4J1)
                 .addGap(31, 31, 31)
                 .addComponent(jLabel40)
                 .addGap(18, 18, 18)
                 .addGroup(MapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel41)
-                    .addComponent(jLabel42)
-                    .addComponent(jLabel43))
+                    .addComponent(PionMort1J2)
+                    .addComponent(PionMort2J2)
+                    .addComponent(PionMort3J2))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel44)
+                .addComponent(PionMort4J2)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -732,14 +732,35 @@ public class Jeu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtChat;
     private javax.swing.JButton ButtonSelecNbJ;
     private javax.swing.JPanel Debut;
+    private javax.swing.JLabel EtatManche;
     private javax.swing.JPanel Jeu1Joueur;
     private javax.swing.JPanel Jeu2Joueurs;
     private javax.swing.JPanel Map;
+    private javax.swing.JLabel NbTour;
+    private javax.swing.JLabel NbTourJ1;
+    private javax.swing.JLabel NbTourJ2;
+    private javax.swing.JLabel PiocheMonstre;
+    private javax.swing.JLabel Pion1J1;
+    private javax.swing.JLabel Pion1J2;
+    private javax.swing.JLabel Pion2J1;
+    private javax.swing.JLabel Pion2J2;
+    private javax.swing.JLabel Pion3J1;
+    private javax.swing.JLabel Pion3J2;
+    private javax.swing.JLabel Pion4J1;
+    private javax.swing.JLabel Pion4J2;
+    private javax.swing.JLabel PionMort1J1;
+    private javax.swing.JLabel PionMort1J2;
+    private javax.swing.JLabel PionMort2J1;
+    private javax.swing.JLabel PionMort2J2;
+    private javax.swing.JLabel PionMort3J1;
+    private javax.swing.JLabel PionMort3J2;
+    private javax.swing.JLabel PionMort4J1;
+    private javax.swing.JLabel PionMort4J2;
     private javax.swing.JPanel SelectionJeu;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButtonContinuer;
     private javax.swing.JButton jButtonContinuer1J;
     private javax.swing.JButton jButtonRetour;
@@ -747,42 +768,21 @@ public class Jeu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
